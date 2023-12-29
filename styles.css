@@ -1,0 +1,70 @@
+body {
+    margin: 30;
+    background: linear-gradient(to right, orange, yellow)
+}
+.navbar{
+    border-radius: 25px;
+    background: grey;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.navdiv{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.logo a{
+    font-size:35px; 
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+li{
+    
+    list-style: none;
+    display: inline-block;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+button{  
+    background-color: black;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100px;
+}
+button a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    font-size: 15px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+.box{
+    /*display:grid;*/
+    
+    width: 300px;
+    height: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+}
+
+.item-1{
+    flex-grow: 2;
+}
+.item-2{
+    flex-grow: 1;
+}
