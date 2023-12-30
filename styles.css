@@ -21,8 +21,7 @@ body {
     color: white;
     text-decoration: none;
 }
-li{
-    
+.nav-list li{
     list-style: none;
     display: inline-block;
 }
@@ -73,12 +72,17 @@ button a{
 }
 
 .item-1{
-    flex-grow: 2;
+    flex-grow: 1;
 }
 .item-2{
-    flex-grow: 2;
+    flex-grow: 1;
 }
 
-ol{
-    padding: 0;
+.specific-list li{
+    list-style: decimal;   
+    padding: 10;
+}
+.no-underline a{
+   
+    color: black;
 }
