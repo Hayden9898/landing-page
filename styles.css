@@ -2,6 +2,7 @@ body {
     margin: 30;
     background: linear-gradient(to right, orange, yellow);
 }
+
 .navbar{
     border-radius: 25px;
     background: brown;
@@ -21,10 +22,12 @@ body {
     color: white;
     text-decoration: none;
 }
+
 .nav-list li{
     list-style: none;
     display: inline-block;
 }
+
 li a{
     text-decoration: none;
     color: white;
@@ -33,7 +36,6 @@ li a{
     margin-right: 25px;
 }
 
-
 button{  
     background-color: black;
     margin-left: 10px;
@@ -41,6 +43,7 @@ button{
     padding: 10px;
     width: 100px;
 }
+
 button a{
     text-decoration: none;
     color:white;
@@ -51,9 +54,18 @@ button a{
 .Title{
     text-align: center;
     padding: 10px;
+    padding-bottom: 5px;
     font-size: 30px;
     font-weight: bold;
     color: green;
+}
+
+.Title p{
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    color:black;
+    padding: 5px;
 }
 
 .container {
@@ -61,25 +73,52 @@ button a{
     flex-direction: row;
     justify-content: space-evenly;   
 }
+.Goal{
+    align-items: center;
+    width: 800px;
+    height: 300px;
+    border: 10px solid red;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 20px;
+    background: rgba(96, 171, 196, 0.9);
+}
+.Goal h1{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+
+.Goal p{
+    font-size: 20px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
+}
 .box1{
-    /*display:grid;*/
     
     width: 300px;
     height: 350px;
     border: 15px solid green;
+    border-radius: 8px;
     padding: 50px;
     margin: 20px;
 }
+
 .box2{
     width: 400px;
     height: 450px;
     border: 15px solid green;
+    border-radius: 8px;
     margin: 20px;
 }
 
 .item-1{
     flex-grow: 1;
 }
+
 .item-2{
     flex-grow: 1;
 }
@@ -89,6 +128,7 @@ button a{
     list-style: decimal;   
     padding: 10;
 }
+
 .no-blue a{
     color: black;
 }
@@ -98,12 +138,14 @@ button a{
     height: 100%;
     object-fit: fill;
 }
+
 .Subtitle2{
     text-align: center;
     font-size: 50px;
     color: red;
     font-weight: 700;
 }
+
 .Subtitle3{
     text-align: center;
     font-size: 30px;
@@ -113,11 +155,13 @@ button a{
 .container2{
     padding: 2rem;
 }
+
 .slider-wrapper{
     position: relative;
     max-width: 48rem;
     margin: 0 auto;
 }
+
 .slider {
     display: flex;
     aspect-ratio: 16/9;
@@ -127,11 +171,13 @@ button a{
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
     border-radius: 0.5rem;
 }
+
 .slider img{
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: cover;
 }
+
 .slider-nav{
     display: flex;
     column-gap: 1rem;
@@ -141,6 +187,7 @@ button a{
     transform: translateX(-50%);
     z-index: 1;
 }
+
 .slider-nav a {
     width: 0.5rem;
     height: 0.5rem;
@@ -149,6 +196,7 @@ button a{
     opacity: 0.75;
     transition: opacity ease 250ms;
 }
+
 .slider-nav a:hover {
     opacity: 1;
     background-color: red;
@@ -157,25 +205,29 @@ button a{
 .slider::-webkit-scrollbar {
     display: none;
  }
-.wrapper{
+
+ .wrapper{
     display: flex;
     padding-top: 50px;
     justify-content: center;
 }
+
 .collapsible{
-    max-width: 450px;
+    width: 700px;
     overflow: hidden;
     font-weight: 500;
 }
+
 .collapsible input{
     display: none;
 }
+
 .collapsible label {
     position: relative;
-    font-weight: 600;
+    font-weight: bold;
     background: #fff;
-    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1) 0 4px 11px 0 rgba(0, 0, 0, .08);
-    color: orange;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .3);
+    color: red;
     display:block;
     margin-bottom: 10px;
     cursor: pointer;
@@ -183,6 +235,7 @@ button a{
     border-radius: 4px;
     z-index: 1;
 }
+
 .collapsible label:after {
     content: "";
     position: absolute;
@@ -193,9 +246,11 @@ button a{
     background: url(arrow.svg) no-repeat 0 0;
     transition: all 0.3s ease;
 }
+
 .collapsible input:checked + label:after{
     transform: rotate(90deg);
 }
+
 .collapsible-text {
     max-height: 1px;
     overflow: hidden;
@@ -208,17 +263,28 @@ button a{
 }
 
 .collapsible input:checked ~ .collapsible-text{
-    max-height: 300px;
+    max-height: 1000px;
     padding-bottom: 25px;
     background: #fff;
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1) 0 4px 11px 0 rgba(0, 0, 0, .08);
     opacity: 1;
     top: 0;
 }
+
 .collapsible-text h2{
     margin-bottom: 10px;
     padding: 15px 15px 0;
     color: blue;
+    font-weight: 800;
+}
+
+.collapsible-text h5{
+    margin-bottom: 10px;
+    padding: 15px 15px 0;
+}
+
+.collapsible-text ul li{
+    font-weight: 700px;
 }
 
 .collapsible-text p {
